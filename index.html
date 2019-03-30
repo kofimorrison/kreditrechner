@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://use.fontawesome.com/4876a35418.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <style>
+      #loading, #results{
+        display: none;
+      }
+    </style>
+
+  <title>Kredit Rechner</title>
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card card-body text-center mt-5">
+          <h1 class="heading display-5 pb-3">Kredit Rechner</h1>
+          <form id="loan-form">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text ">€</span>
+                </div>
+                <input type="text" class="form-control" id="amount" placeholder="Kredit Betrag">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text ">%</span>
+                </div>
+                <input type="float" class="form-control" id="interest" placeholder="Zinsen">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="float" class="form-control" id="years" placeholder="Laufzeit">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Berechnen" class="btn btn-dark btn-block">
+            </div>
+          </form>
+          <!-- Loader -->
+          <div id="loading">
+            <img src="img/loading.gif" alt="">
+          </div>
+          <!-- Results -->
+          <div id="results">
+            <h5>Ergebnisse</h5>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text ">Rate</span>
+                </div>
+                <input type="number" class="form-control" id="monthly-payment" disabled>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text ">Gesamtzahlung</span>
+                </div>
+                <input type="number" class="form-control" id="total-payment" disabled>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text ">Gesamtzins</span>
+                </div>
+                <input type="number" class="form-control" id="total-interest" disabled>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+<div class="contact-info mb-0">
+    <a href="http://kofimorrison.com" target="_blank"><i class="fa fa-chrome" aria-hidden="true" ></i><span
+      class="sr-only">www.kofimorrison.com</span></a>
+    <a href="mailto:kofi.morrison@gmx.de"><i class="fa fa-envelope" aria-hidden="true"></i>
+        <span class="sr-only">kofi.morrison@gmx.de</span></a>
+    <a href="https://www.linkedin.com/in/kofi-morrison-60169153/" target="_blank"><i class="fa fa-linkedin"
+      aria-hidden="true" ></i>
+        <span class="sr-only">LinkedIn</span></a>
+    <a href="https://www.xing.com/profile/KOFI_MORRISON/cv" target="_blank"><i class="fa fa-xing"
+      aria-hidden="true" ></i>
+        <span class="sr-only">Xing</span></a>
+    <p>&copy Copyright 2019 by Kofi Morrison</p>
+</div>
+
+</html>

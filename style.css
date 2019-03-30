@@ -1,0 +1,24 @@
+
+.contact-info{
+    text-align: center;
+    padding: 25px;
+    background: #2B2D42;
+}
+.contact-info a{
+    padding: 10px;
+    display: inline-block;
+}
+a{
+    color: red;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.container{
+    margin-bottom: 142px;
+}
+
+p{
+    color: gray;
+}
